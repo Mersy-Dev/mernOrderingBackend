@@ -16,3 +16,24 @@ export const validateUserRequest = [
     body("country").isString().notEmpty().withMessage("Country is required and must be a string"),
     handleValidationErrors
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

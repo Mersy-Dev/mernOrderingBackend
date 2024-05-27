@@ -22,9 +22,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+app.get("/health", (req: Request, res: Response)=>{
+    res.send({message: "Health Is OK!"});
+}
+);
+
+
 app.use("/api/user", myUserRoute);
 
 
 app.listen(7000, ()=>{
     console.log("Server is running on port 7000");
-});
+}); 
